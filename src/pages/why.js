@@ -2,33 +2,48 @@ import React from 'react';
 
 const Why = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5" style={{ fontFamily: 'Questrial, sans-serif' }}>
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <h1 className="display-4 text-center mb-5">.why</h1>
           
-          <section className="bg-light p-5 rounded-3 shadow-sm">
-            
+          <section className="bg-white p-5 rounded-3 shadow-sm">
             <div className="prose">
-              <p className="lead mb-4">
-                Talk was created to allow anyone to express themselves sincerely and authentically in a world where social networks often feel superficial.
-              </p>
-              
-              <p className="mb-4">
-                Living means experiencing both positive and negative situations, and talking about them can be incredibly powerful - helping us gain perspective, find freedom, and learn from our experiences. We all go through challenges that others have already faced, which is why we've created a platform for anonymous podcasts where real connections can flourish.
-              </p>
-              
-              <p className="mb-4">
-                This isn't just another social network filled with influencers and followers; it's a space where everyone can be a creator, not just a consumer, because we believe true happiness lies in creation rather than passive consumption.
-              </p>
-              
-              <p className="mb-4">
-                Through the power of anonymity, even the most introverted, hesitant, or shy individuals can find their voice and express themselves fully.
-              </p>
-              
-              <p className="mb-0">
-                Whether you want to share your story and inspire others or simply speak your mind, talk provides that safe space - because we understand that sometimes, talking is all we need to feel better.
-              </p>
+              <div className="text-center mb-5">
+                
+                <div className="d-flex flex-column align-items-center gap-4 mb-5">
+                  {/* Statement Container */}
+                  <div className="statement-container position-relative">
+                    <div className="statement-box bg-white p-4 rounded-4 shadow-sm mb-4" style={{ maxWidth: '600px' }}>
+                      <div className="d-flex flex-column gap-3">
+                        {/* Core Statements */}
+                        {['should', 'have', 'want', 'need'].map((verb, index) => (
+                          <div key={index} className="statement-line py-2 border-bottom">
+                            <span className="fs-4">if people </span>
+                            <span className="fs-4 fw-bold">{verb}</span>
+                            <span className="fs-4">{verb !== 'should' ? ' to' : ''} talk</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  {/* Current State */}
+                  <div className="status-container my-4">
+                    <p className="fs-5 fst-italic text-black mb-0">
+                      but have nobody to talk with, they are stuck with their thoughts.
+                    </p>
+                  </div>
+
+                  {/* Solution Statement */}
+                  <div className="status-container my-4">
+                    <p className="fs-5 text-black mb-0">
+                      Today, they can face frustration. Tomorrow, they will use <strong>talk</strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </div>

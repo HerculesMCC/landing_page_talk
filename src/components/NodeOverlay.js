@@ -27,13 +27,6 @@ class NodeOverlay extends Component {
           alt="Background Circle Image"
           className={`${styles.node_three} d-none d-md-block`}
         />
-        <Image 
-          src="/images/node-light.svg" 
-          width={300} 
-          height={300} 
-          alt="Background Circle Image"
-          className={`${styles.node_four} d-none d-lg-block`}
-        />
       </>
     );
   }
