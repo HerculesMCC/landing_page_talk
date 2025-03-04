@@ -1,7 +1,35 @@
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  overflow-y: auto;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow: visible;
+}
 
 #main-container {
+  flex: 1 0 auto;
   width: 100%;
   overflow-x: clip;
+  padding-bottom: 4rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .my-lg {
@@ -32,11 +60,11 @@ a {
 }
 
 .bg-primary {
-  background-color: #215F4A !important;
+  background-color: #131b1c; 
 }
 
 .text-primary {
-  color: #215F4A !important;
+  color: #131b1c;
 }
 
 .navbar-brand {
@@ -58,8 +86,9 @@ button.accordion-button:not(.collapsed) {
 }
 
 .bg-graident {
-  background: rgb(22, 130, 94);
-  background: radial-gradient(circle, rgba(22, 130, 94, 1) 0%, rgba(18, 122, 87, 1) 30%, rgba(33, 95, 74, 1) 100%);
+  background: rgb(39, 54, 112);
+  background: radial-gradient(circle, #d4e8f6 0%, #d4e8f6 30%, #d4e8f6 100%);
+
 }
 
 .social-icon svg:hover {
@@ -85,13 +114,21 @@ button.accordion-button:not(.collapsed) {
 }
 
 #section_footer {
+  flex-shrink: 0;
   width: 100%;
-  background: #215F4A;
+  background: #131b1c;
+  padding: 1rem 0;
+  margin: 0;
+  bottom: 0;
+  position: relative;
+  z-index: 1;
 
   a, span {
     color: #fff;
     font-size: .75em;
     text-decoration: none;
+    display: inline-block;
+    margin: 0;
   }
   
   a:hover {
@@ -101,6 +138,31 @@ button.accordion-button:not(.collapsed) {
   p {
     color: #fff;
     font-size: .5em;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .text-center {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body, #__next {
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  #main-container {
+    padding-bottom: 3rem;
+  }
+
+  #section_footer {
+    padding: 1rem 0;
+    margin: 0;
+    line-height: 1.2;
   }
 }
 
@@ -118,4 +180,9 @@ button.accordion-button:not(.collapsed) {
 
 .animate-slide-up {
   animation: slideUp 1s ease-out;
+}
+
+.py-7 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
 }

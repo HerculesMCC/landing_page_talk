@@ -12,7 +12,7 @@ const DynamicMeta = () => {
       {/* PRIMARY META */}
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/images/talk_logo_bw.png" />
 
       <title>{currentMeta.title}</title>
       <meta name="title" content={currentMeta.title} />

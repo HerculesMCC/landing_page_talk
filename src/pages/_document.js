@@ -10,7 +10,6 @@ export default function Document() {
         <div id='main-container'>
           <Main />
           <NextScript />
-          <Footer />
         </div>
       </body>
     </Html>

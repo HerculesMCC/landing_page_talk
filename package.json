@@ -1,5 +1,5 @@
 {
-  "name": "roads-landing-page",
+  "name": "landing_page_talk",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,18 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore ."
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "server": "node server.js"
   },
   "dependencies": {
+    "airtable": "^0.12.2",
+    "body-parser": "^1.20.3",
     "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "eslint": "8.37.0",
     "eslint-config-next": "^14.2.4",
+    "express": "^4.21.2",
     "jquery": "^3.6.4",
     "next": "^14.2.4",
     "react": "^18.3.1",

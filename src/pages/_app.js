@@ -17,8 +17,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     require('bootstrap/dist/js/bootstrap.bundle.min.js');
 
-    // Initialize Google Analyitics.
-    ReactGA.initialize(`${process.env.NEXT_PUBLIC_GTAG_ID}`)
+  
   }, []);
 
   return (
@@ -29,6 +28,7 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       </main>
+      <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"></link>
     </>
   );
 }
