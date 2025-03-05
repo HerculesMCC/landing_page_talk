@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Hero.module.scss';
 import Link from 'next/link';
-import AppLinks from '@/components/AppLinks';
+// import AppLinks from '@/components/AppLinks';
 
 class Hero extends Component {
   render() {
