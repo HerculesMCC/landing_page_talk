@@ -10,7 +10,7 @@ $section_headline_height: 80vh;
   height: $section_headline_height;
   width: 100vw;
   background: #131b1c;
-  background: linear-gradient(135deg, #d4e8f6 30%, #d4e8f6 100%);
+  background: linear-gradient(315deg, #d4e8f6 30%, #ffffff 100%);
 
   h1, h2, p {
     color: #131b1c;
@@ -46,6 +46,7 @@ $section_headline_height: 80vh;
 
   .cover_imgs_container {
     padding-top: 1em;
+    padding-bottom: 40px;
   }
 
   .vLine1, .vLine2, .vLine3, .vLine4, .vLine5, .vLine6 {
@@ -85,6 +86,14 @@ $section_headline_height: 80vh;
   /* Your styles for medium screens only */
   #section_headline_container {
     min-height: 60vh;
+  }
+}
+.cover_imgs_container {
+  @media (max-width: 768px) {
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 60px;
   }
 }
 

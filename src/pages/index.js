@@ -1,4 +1,5 @@
 import styles from '@/styles/Home.module.scss';
+import heroStyles from '@/styles/Hero.module.scss';
 import Image from 'next/image';
 import NodeOverlay from '@/components/NodeOverlay';
 import UseCase from '@/components/UseCase';
@@ -15,19 +16,80 @@ export default function Home() {
     <>
       <main className={styles.main}>     
         <NodeOverlay />
-        <Hero 
-          title="talk"
-          subtitle="think it, say it"
-        />
-        
-        <div className="spacer d-none d-md-block py-7"></div>
-        <div className="spacer d-md-none py-5"></div>
- 
+        <div id={heroStyles.section_headline_container}>
+          <div id={heroStyles.section_headline}>
+            <div id={heroStyles.qr_code} className={`d-none d-lg-block`}></div>
+            
+            <nav className="navbar text-center text-md-left">
+            </nav>
+
+            <div className='text-center'>
+              <h1 className={`pt-1 px-3 pb-0`}>talk</h1>
+              <div className='row justify-content-center px-3'>
+                <h2 className='col-md-10 col-lg-6 col-xl-5'>
+                  think it, say it
+                </h2>
+              </div>
+              <div className='row justify-content-center px-3'>
+                <p className='col-md-10 col-lg-6 col-xl-5 mt-3'>
+                  Join a conversation, find your voice, connect with people who care.
+                </p>
+              </div>
+            </div>
+
+            <div className={`${heroStyles.cover_imgs_container} text-center d-flex justify-content-center align-items-center animate-slide-up mb-5`}>
+                <Image 
+                  src="/images/phones/categoryPage.png" 
+                  alt="Screenshot of talk app showing the main player with several comments."
+                  height={500}
+                  width={260}
+                  className='mt-5 d-none d-md-block'
+                  style={{ 
+                    maxWidth: '30%',
+                    height: 'auto',
+                  }}
+                />
+                <Image 
+                  src="/images/phones/sessionPage.png" 
+                  alt="Screenshot of talk app showing the main player with several comments."
+                  height={600}
+                  width={310}
+                  className='mx-2 mx-md-4'
+                  style={{ 
+                    maxWidth: '80%',
+                    height: 'auto',
+                  }}
+                />
+                <Image 
+                  src="/images/phones/createSessionPage.png" 
+                  alt="Screenshot of talk app showing the main player with several comments."
+                  height={500}
+                  width={260}
+                  className='mt-5 d-none d-md-block'
+                  style={{ 
+                    maxWidth: '30%',
+                    height: 'auto',
+                  }}
+                />
+            </div>
+          </div>
+        </div>
+
+        <div className="d-none d-md-block" style={{ height: '20vh' }}></div>
+        <div className="d-md-none" style={{ height: '35vh' }}></div>
+
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-12 text-center">
+              <h2 className="h2-lg " style={{whiteSpace: 'nowrap'}}>let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
+            </div>
+          </div>
+        </div>
+
         <div id={styles.section_features} className="py-5 mt-5">
           <div className="container">
-            <div className="row justify-content-md-center">
+            <div className="row justify-content-center">
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
-                <h2 className="h2-lg mb-4" style={{whiteSpace: 'nowrap'}}>let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
                 <div className={`${styles.mobile_spacing} ${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/fatherSession.png" 
