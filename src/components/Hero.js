@@ -46,7 +46,7 @@ class Hero extends Component {
                   }}
                 />
                 <Image 
-                  src="/images/phones/sessionPage.png" 
+                  src="/images/phones/c.png" 
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={600}
                   width={310}
