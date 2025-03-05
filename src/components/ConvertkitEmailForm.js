@@ -61,7 +61,7 @@ class ConvertkitEmailForm extends Component {
             type="email"
             name="email"
             className="form-control"
-            placeholder="Enter your email"
+            placeholder="Enter your email" 
             value={this.state.email}
             onChange={(e) => this.setState({ email: e.target.value, message: '' })}
             style={{
