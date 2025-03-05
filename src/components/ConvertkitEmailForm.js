@@ -41,7 +41,7 @@ class ConvertkitEmailForm extends Component {
       const json_res = await res.json();
 
       this.setState({
-        message: json_res.message || 'Thank you for subscribing!',
+        message: json_res.message || 'Thank you for subscribing!', 
         email: '',
         isError: false
       });
