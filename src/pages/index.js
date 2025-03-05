@@ -25,10 +25,9 @@ export default function Home() {
  
         <div id={styles.section_features} className="py-5 mt-5">
           <div className="container">
-            <h2 className="h2-lg text-center mb-5">let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
-
             <div className="row justify-content-md-center">
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
+                <h2 className="h2-lg mb-4" style={{whiteSpace: 'nowrap'}}>let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/fatherSession.png" 
