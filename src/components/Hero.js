@@ -36,7 +36,7 @@ class Hero extends Component {
             <div className={`${styles.cover_imgs_container} text-center d-flex justify-content-center align-items-center animate-slide-up`}>
                 <Image 
                   src="/images/phones/categoryPage.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
+                  alt="Screenshot of talk app showing the main player with several comments."
                   height={500}
                   width={260}
                   className='phone_shadow mt-5 d-none d-md-block'
@@ -46,8 +46,8 @@ class Hero extends Component {
                   }}
                 />
                 <Image 
-                  src="/images/phones/c.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
+                  src="/images/phones/sessionPage.png" 
+                  alt="Screenshot of talk app showing the main player with several comments."
                   height={600}
                   width={310}
                   className='phone_shadow mx-2 mx-md-4'
@@ -61,7 +61,7 @@ class Hero extends Component {
                 />
                 <Image 
                   src="/images/phones/createSessionPage.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
+                  alt="Screenshot of talk app showing the main player with several comments."
                   height={500}
                   width={260}
                   className='phone_shadow mt-5 d-none d-md-block'
