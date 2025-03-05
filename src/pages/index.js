@@ -28,7 +28,7 @@ export default function Home() {
             <div className="row justify-content-md-center">
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <h2 className="h2-lg mb-4" style={{whiteSpace: 'nowrap'}}>let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
-                <div className={`${styles.backsplash} mx-auto`}></div>
+                <div className={`${styles.mobile_spacing} ${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/fatherSession.png" 
                   alt="Screenshot of Roads app showing the main player with several comments."

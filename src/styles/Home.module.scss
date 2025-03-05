@@ -31,9 +31,18 @@
 
   @media (max-width: 768px) {
     margin-top: 10rem;
+    padding-top: 80px;
     &:last-of-type {
       margin-top: 0;
       padding-top: 0;
+    }
+
+    .backsplash_container {
+      margin-top: 20px;
+    }
+
+    .backsplash {
+      margin-top: 20px;
     }
   }
 
@@ -76,6 +85,9 @@
 @media (min-width: 768px) { 
   #section_features {
     margin-top: 0;
+  }
+  .mobile_spacing {
+    margin-top: 1000px; /* 2cm ≈ 20px */
   }
 
   #section_wait_list {
