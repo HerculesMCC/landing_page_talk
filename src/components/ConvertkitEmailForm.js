@@ -26,15 +26,16 @@ class ConvertkitEmailForm extends Component {
     }
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-      const res = await fetch(`${apiUrl}/api/subscribe`, {
+      // Utilisez l'URL de votre serveur Express
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://landingpage-backend-1.onrender.com';
+      const res = await fetch(`${apiUrl}/subscribe`, {  // Notez que c'est /subscribe et non /api/subscribe
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json; charset=utf-8',
         },
         body: JSON.stringify({ email: this.state.email }),
-        mode: 'cors',
-        credentials: 'include'
+        mode: 'cors',  // Gardé car c'est une API externe
+        credentials: 'include'  // Gardé si vous avez besoin des cookies
       });
 
       const json_res = await res.json();
