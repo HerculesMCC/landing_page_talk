@@ -21,7 +21,7 @@ export default function Home() {
         />
         
         <div className="spacer d-none d-md-block py-7"></div>
-        <div className="spacer d-md-none py-1"></div>
+        <div className="spacer d-md-none py-5"></div>
  
         <div id={styles.section_features} className="py-5">
           <div className="container">
@@ -35,7 +35,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing the main player with several comments."
                   height={400}
                   width={200}
-                  className={`${styles.backsplash_image} phone_shadow`}
+                  className={`${styles.backsplash_image}`}
                 />
               </div>
 
@@ -57,7 +57,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
                   height={400}
                   width={200}
-                  className={`${styles.backsplash_image} phone_shadow`}
+                  className={`${styles.backsplash_image}`}
                 />
               </div>
                <div className='col-md-6 col-lg-6 my-auto order-md-first text-center text-md-start'>
@@ -76,7 +76,7 @@ export default function Home() {
                   alt="Screenshot of Roads app showing how to select friends to add to a channel."
                   height={400}
                   width={200}
-                  className={`${styles.backsplash_image} phone_shadow`}
+                  className={`${styles.backsplash_image}`}
                 />
               </div>
 

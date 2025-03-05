@@ -39,7 +39,7 @@ class Hero extends Component {
                   alt="Screenshot of talk app showing the main player with several comments."
                   height={500}
                   width={260}
-                  className='phone_shadow mt-5 d-none d-md-block'
+                  className='mt-5 d-none d-md-block'
                   style={{ 
                     maxWidth: '30%',
                     height: 'auto',
@@ -50,7 +50,7 @@ class Hero extends Component {
                   alt="Screenshot of talk app showing the main player with several comments."
                   height={600}
                   width={310}
-                  className='phone_shadow mx-2 mx-md-4'
+                  className='mx-2 mx-md-4'
                   style={{ 
                     maxWidth: '80%',
                     height: 'auto',
@@ -64,7 +64,7 @@ class Hero extends Component {
                   alt="Screenshot of talk app showing the main player with several comments."
                   height={500}
                   width={260}
-                  className='phone_shadow mt-5 d-none d-md-block'
+                  className='mt-5 d-none d-md-block'
                   style={{ 
                     maxWidth: '30%',
                     height: 'auto',
