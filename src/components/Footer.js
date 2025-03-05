@@ -24,9 +24,6 @@ class Footer extends Component {
             Contact
           </Link>
 
-
-          
-
           <div className='mt-2 mb-3'>
             <Link href="https://www.instagram.com/talk.kr/" target="_blank" className='social-icon mx-1'>
               <IoLogoInstagram size={25}/>

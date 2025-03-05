@@ -23,9 +23,9 @@ export default function Home() {
         <div className="spacer d-none d-md-block py-7"></div>
         <div className="spacer d-md-none py-5"></div>
  
-        <div id={styles.section_features} className="py-5">
+        <div id={styles.section_features} className="py-5 mt-5">
           <div className="container">
-            <h2 className="h2-lg text-center mb-5 mt-4">let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
+            <h2 className="h2-lg text-center mb-5">let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
 
             <div className="row justify-content-md-center">
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
