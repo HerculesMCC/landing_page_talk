@@ -93,7 +93,7 @@ export default function Home() {
                 <div className={`${styles.mobile_spacing} ${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/fatherSession.png" 
-                  alt="Screenshot of Roads app showing the main player with several comments."
+                  alt="Screenshot of talk app showing a father and his son talking about their experiences."
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image}`}
@@ -115,7 +115,7 @@ export default function Home() {
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/advicePage.png" 
-                  alt="Screenshot of Roads app showing the home page where new comments left by other users can be listened to."
+                  alt="Screenshot of talk app showing a user listening to a talk."
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image}`}
@@ -134,7 +134,7 @@ export default function Home() {
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
                   src="/images/phones/filterSession2.png" 
-                  alt="Screenshot of Roads app showing how to select friends to add to a channel."
+                  alt="Screenshot of talk app showing a user creating a session."
                   height={400}
                   width={200}
                   className={`${styles.backsplash_image}`}

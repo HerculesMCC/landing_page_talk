@@ -31,12 +31,12 @@ const DynamicMeta = () => {
         // show "download app link"
         <>
           <meta name="twitter:card" content="app" />
-          <meta name="twitter:app:name:iphone" content="Roads" />
+          <meta name="twitter:app:name:iphone" content="Talk" />
           <meta name="twitter:app:id:iphone" content="6443961864" />
-          <meta name="twitter:app:name:googleplay" content="Roads" />
-          <meta name="twitter:app:id:com.onemanstartup.roads" />
+          <meta name="twitter:app:name:googleplay" content="Talk" />
+          <meta name="twitter:app:id:com.onemanstartup.talk" />
           {/* add root canonical */}
-          <link rel="canonical" href="https://roadsaudio.com" />
+          <link rel="canonical" href="https://talksocialapp.com" />
         </>
       ) : (
         <>
