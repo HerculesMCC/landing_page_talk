@@ -1,6 +1,8 @@
 # landing page of talk
 
-talk is the social app for people who want to talk to each other.
+talk is a social app for people who want to talk (talksocialapp.com)
+
+
 
 ## Run Development Server
 
