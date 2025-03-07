@@ -4,7 +4,8 @@ class ConvertkitEmailForm extends Component {
   state = {
     message: '',
     email: '',
-    isError: false
+    isError: false,
+    isLoading: false
   };
 
   emailHandler = (e) => {
@@ -14,13 +15,15 @@ class ConvertkitEmailForm extends Component {
 
   subscribeUser = async (e) => {
     e.preventDefault();
+    this.setState({ isLoading: true });
 
     // Validation de l'email avec regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(this.state.email)) {
       this.setState({
         message: 'Please enter a valid email address',
-        isError: true
+        isError: true,
+        isLoading: false
       });
       return;
     }
@@ -43,12 +46,14 @@ class ConvertkitEmailForm extends Component {
       this.setState({
         message: json_res.message || 'Thank you for subscribing!',  
         email: '',
-        isError: false
+        isError: false,
+        isLoading: false
       });
     } catch (error) {
       this.setState({
         message: 'An error occurred. Please try again.',
-        isError: true
+        isError: true,
+        isLoading: false
       });
     }
   };
@@ -75,22 +80,31 @@ class ConvertkitEmailForm extends Component {
               type="submit"
               id="newsletter-btn"
               className="btn px-4"
-              value=""
-              name="subscribe"
+              disabled={this.state.isLoading}
               style={{
-                backgroundColor: '#d4e8f6',
-                borderColor: '#d4e8f6',
-                color: '#2c3e50',
+                backgroundColor: this.state.isLoading ? '#e9ecef' : '#d4e8f6',
+                borderColor: this.state.isLoading ? '#e9ecef' : '#d4e8f6',
+                color: this.state.isLoading ? '#6c757d' : '#2c3e50',
                 transition: 'all 0.3s ease',
                 borderRadius: '0.25rem',
                 display: 'inline-block',
+                cursor: this.state.isLoading ? 'not-allowed' : 'pointer',
                 ':hover': {
-                  backgroundColor: '#b8d8f0',
-                  borderColor: '#b8d8f0'
+                  backgroundColor: this.state.isLoading ? '#e9ecef' : '#b8d8f0',
+                  borderColor: this.state.isLoading ? '#e9ecef' : '#b8d8f0'
                 }
               }}
             >
-              Join The Wait List
+              {this.state.isLoading ? (
+                <div className="d-flex align-items-center gap-2">
+                  <div className="spinner-border spinner-border-sm" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                  </div>
+                  <span>Subscribing...</span>
+                </div>
+              ) : (
+                'Join The Wait List'
+              )}
             </button>
           </div>
         </div>
