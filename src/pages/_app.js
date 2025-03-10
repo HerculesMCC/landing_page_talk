@@ -22,6 +22,22 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>talk - Landing Page</title>
+        <meta name="description" content="Join a talk, find your voice, connect with people who care. talk is an anonymous social platform where authenticity meets meaningful discussions." />
+        <meta name="keywords" content="talk, social, anonymous, conversations, voice, community" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="talk - think it, say it" />
+        <meta property="og:description" content="Join a talk, find your voice, connect with people who care. talk is an anonymous social platform where authenticity meets meaningful discussions." />
+        <meta property="og:url" content="https://talksocialapp.com" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="talk - think it, say it" />
+        <meta name="twitter:description" content="Join a talk, find your voice, connect with people who care. talk is an anonymous social platform where authenticity meets meaningful discussions." />
+      </Head>
       <DynamicMeta />
       <main className={montserrat.className}>
         <Layout>
