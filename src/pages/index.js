@@ -76,7 +76,7 @@ export default function Home() {
         </div>
 
         <div className="d-none d-md-block" style={{ height: '30vh' }}></div>
-        <div className="d-md-none" style={{ height: '55vh' }}></div>
+        <div className="d-md-none" style={{ height: '70vh' }}></div>
 
         <div className="container">
           <div className="row justify-content-center">
