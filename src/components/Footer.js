@@ -28,6 +28,9 @@ class Footer extends Component {
             <Link href="https://www.instagram.com/talk.kr/" target="_blank" className='social-icon mx-1'>
               <IoLogoInstagram size={25}/>
             </Link>
+            <Link href="https://www.tiktok.com/@talk.kr" target="_blank" className='social-icon mx-1'>
+              <IoLogoTiktok size={25}/>
+            </Link>
           </div>
 
           <p className="mb-0">Copyright © {current_year}, talk.kr. All Rights Reserved.</p>
