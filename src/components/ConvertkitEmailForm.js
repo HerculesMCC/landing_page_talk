@@ -100,7 +100,7 @@ class ConvertkitEmailForm extends Component {
                   <div className="spinner-border spinner-border-sm" role="status">
                     <span className="visually-hidden">Loading...</span>
                   </div>
-                  <span>We are processing your request... please wait.</span>
+                  <span>We are processing your request... please wait (until you see the " You have been added to the wait list!" message).</span>
                 </div>
               ) : (
                 'Join The Wait List'
