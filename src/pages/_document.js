@@ -13,6 +13,10 @@ export default function Document() {
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta name="theme-color" content="#ffffff" />
+        
+        {/* Désactiver le comportement PWA et empêcher l'invite d'installation */}
+        <meta name="mobile-web-app-capable" content="no" />
+        <meta name="apple-mobile-web-app-capable" content="no" />
       </Head>
       <body>
         <div id='main-container'>
