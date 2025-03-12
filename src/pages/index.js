@@ -94,8 +94,8 @@ export default function Home() {
                 <Image 
                   src="/images/phones/fatherSession.png" 
                   alt="Screenshot of talk app showing a father and his son talking about their experiences."
-                  height={400}
-                  width={200}
+                  height={500}
+                  width={250}
                   className={`${styles.backsplash_image}`}
                 />
               </div>
@@ -116,8 +116,8 @@ export default function Home() {
                 <Image 
                   src="/images/phones/advicePage.png" 
                   alt="Screenshot of talk app showing a user listening to a talk."
-                  height={400}
-                  width={200}
+                  height={500}
+                  width={250}
                   className={`${styles.backsplash_image}`}
                 />
               </div>
@@ -135,8 +135,8 @@ export default function Home() {
                 <Image 
                   src="/images/phones/filterSession2.png" 
                   alt="Screenshot of talk app showing a user creating a session."
-                  height={400}
-                  width={200}
+                  height={500}
+                  width={250}
                   className={`${styles.backsplash_image}`}
                 />
               </div>
