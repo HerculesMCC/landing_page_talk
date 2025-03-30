@@ -88,31 +88,9 @@ export default function Home() {
                 {/* Bouton gauche */}
                 <button 
                   onClick={() => setCurrentImageIndex((prev) => (prev === 0 ? 4 : prev - 1))}
+                  className="carousel-button"
                   style={{
-                    border: '2px solid white',
-                    color: '#666666',
-                    background: 'white',
-                    width: '44px',
-                    height: '44px',
-                    borderRadius: '50%',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '22px',
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.2), 0 0 4px rgba(255,255,255,0.5)',
-                    transition: 'all 0.1s ease',
-                    flexShrink: 0,
-                    marginLeft: '15px',
-                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-                    lineHeight: '1',
-                    paddingBottom: '2px',
-                    WebkitTapHighlightColor: 'transparent',
-                    ':active': {
-                      transform: 'scale(0.95) translateY(1px)',
-                      boxShadow: '0 1px 4px rgba(0,0,0,0.1)',
-                      background: '#f8f8f8'
-                    }
+                    marginLeft: '15px'
                   }}
                 >
                   ❮
@@ -134,31 +112,9 @@ export default function Home() {
                 {/* Bouton droit */}
                 <button 
                   onClick={() => setCurrentImageIndex((prev) => (prev === 4 ? 0 : prev + 1))}
+                  className="carousel-button"
                   style={{
-                    border: '2px solid white',
-                    color: '#666666',
-                    background: 'white',
-                    width: '44px',
-                    height: '44px',
-                    borderRadius: '50%',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '22px',
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.2), 0 0 4px rgba(255,255,255,0.5)',
-                    transition: 'all 0.1s ease',
-                    flexShrink: 0,
-                    marginRight: '15px',
-                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-                    lineHeight: '1',
-                    paddingBottom: '2px',
-                    WebkitTapHighlightColor: 'transparent',
-                    ':active': {
-                      transform: 'scale(0.95) translateY(1px)',
-                      boxShadow: '0 1px 4px rgba(0,0,0,0.1)',
-                      background: '#f8f8f8'
-                    }
+                    marginRight: '15px'
                   }}
                 >
                   ❯
