@@ -10,8 +10,45 @@ import Link from 'next/link';
 import Review from '@/components/Review';
 import ConvertkitEmailForm from '@/components/ConvertkitEmailForm';
 import Footer from '@/components/Footer';
+import { useSwipeable } from 'react-swipeable';
+import { useState } from 'react';
 
 export default function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(2);
+  
+  const images = [
+    {
+      src: "/images/phones/sport.png",
+      height: 600,
+      width: 312,
+    },
+    {
+      src: "/images/phones/health.png",
+      height: 600,
+      width: 312,
+    },
+    {
+      src: "/images/phones/passion.png",
+      height: 600,
+      width: 312,
+    },
+    {
+      src: "/images/phones/advice.png",
+      height: 600,
+      width: 312,
+    },
+    {
+      src: "/images/phones/football2.png",
+      height: 600,
+      width: 312,
+    }
+  ];
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setCurrentImageIndex((prev) => (prev === 4 ? 0 : prev + 1)),
+    onSwipedRight: () => setCurrentImageIndex((prev) => (prev === 0 ? 4 : prev - 1)),
+  });
+
   return (
     <>
       <main className={styles.main}>     
@@ -38,39 +75,158 @@ export default function Home() {
             </div>
 
             <div className={`${heroStyles.cover_imgs_container} text-center d-flex justify-content-center align-items-center animate-slide-up mb-5`}>
-                <Image 
-                  src="/images/phones/categoryPage.png" 
-                  alt="Screenshot of talk app showing the main player with several comments."
-                  height={500}
-                  width={260}
-                  className='mt-5 d-none d-md-block'
-                  style={{ 
-                    maxWidth: '30%',
-                    height: 'auto',
+              {/* Version mobile et iPad avec swipe */}
+              <div {...handlers} className="w-100 d-lg-none" style={{ 
+                position: 'relative',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '20px',
+                margin: '0 40px',
+                width: 'calc(100% - 80px)'
+              }}>
+                {/* Bouton gauche */}
+                <button 
+                  onClick={() => setCurrentImageIndex((prev) => (prev === 0 ? 4 : prev - 1))}
+                  style={{
+                    border: '2px solid white',
+                    color: '#000000',
+                    background: 'white',
+                    width: '40px',
+                    height: '40px',
+                    borderRadius: '50%',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '18px',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.2), 0 0 4px rgba(255,255,255,0.5)',
+                    transition: 'all 0.2s ease',
+                    flexShrink: 0,
+                    marginLeft: '15px'
                   }}
-                />
+                >
+                  <svg 
+                    width="20" 
+                    height="20" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="black" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <path d="M15 18l-6-6 6-6"/>
+                  </svg>
+                </button>
+
+                {/* Image */}
                 <Image 
-                  src="/images/phones/sessionPage.png" 
+                  src={images[currentImageIndex].src}
                   alt="Screenshot of talk app showing the main player with several comments."
-                  height={600}
-                  width={310}
-                  className='mx-2 mx-md-4'
+                  height={images[currentImageIndex].height}
+                  width={images[currentImageIndex].width}
                   style={{ 
                     maxWidth: '80%',
                     height: 'auto',
+                    objectFit: 'contain'
                   }}
                 />
+
+                {/* Bouton droit */}
+                <button 
+                  onClick={() => setCurrentImageIndex((prev) => (prev === 4 ? 0 : prev + 1))}
+                  style={{
+                    border: '2px solid white',
+                    color: '#000000',
+                    background: 'white',
+                    width: '40px',
+                    height: '40px',
+                    borderRadius: '50%',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '18px',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.2), 0 0 4px rgba(255,255,255,0.5)',
+                    transition: 'all 0.2s ease',
+                    flexShrink: 0,
+                    marginRight: '15px'
+                  }}
+                >
+                  <svg 
+                    width="20" 
+                    height="20" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="black" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <path d="M9 18l6-6-6-6"/>
+                  </svg>
+                </button>
+              </div>
+
+              {/* Version desktop avec les 5 images */}
+              <div className="d-none d-lg-flex justify-content-center align-items-center w-100">
                 <Image 
-                  src="/images/phones/createSessionPage.png" 
+                  src="/images/phones/sport.png" 
                   alt="Screenshot of talk app showing the main player with several comments."
                   height={500}
                   width={260}
-                  className='mt-5 d-none d-md-block'
+                  className='mt-5 mx-0.5'
                   style={{ 
-                    maxWidth: '30%',
+                    maxWidth: '20%',
                     height: 'auto',
                   }}
                 />
+                <Image 
+                  src="/images/phones/health.png" 
+                  alt="Screenshot of talk app"
+                  height={550}
+                  width={286}
+                  className='mt-5 mx-0.5'
+                  style={{ 
+                    maxWidth: '20%',
+                    height: 'auto',
+                  }}
+                />
+                <Image 
+                  src="/images/phones/passion.png" 
+                  alt="Screenshot of talk app showing the main player with several comments."
+                  height={600}
+                  width={312}
+                  className='mt-5 mx-0.5'
+                  style={{ 
+                    maxWidth: '60%',
+                    height: 'auto',
+                  }}
+                />
+                <Image 
+                  src="/images/phones/advice.png" 
+                  alt="Screenshot of talk app"
+                  height={550}
+                  width={286}
+                  className='mt-5 mx-0.5'
+                  style={{ 
+                    maxWidth: '20%',
+                    height: 'auto',
+                  }}
+                />
+                <Image 
+                  src="/images/phones/football2.png" 
+                  alt="Screenshot of talk app showing the main player with several comments."
+                  height={500}
+                  width={260}
+                  className='mt-5 mx-0.5'
+                  style={{ 
+                    maxWidth: '20%',
+                    height: 'auto',
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -81,7 +237,7 @@ export default function Home() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 text-center">
-              <h2 className="h2-lg " style={{whiteSpace: 'nowrap'}}>let's <span style={{opacity: 0.6, color: '#d4e8f6'}}>re</span>connect people</h2>
+              <h2 className="h2-lg " style={{whiteSpace: 'nowrap'}}>let's <span style={{opacity: 0.1, color: '#000000'}}>re</span>connect people</h2>
             </div>
           </div>
         </div>
@@ -92,7 +248,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.mobile_spacing} ${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/fatherSession.png" 
+                  src="/images/phones/dog.png" 
                   alt="Screenshot of talk app showing a father and his son talking about their experiences."
                   height={500}
                   width={250}
@@ -114,7 +270,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 offset-lg-1 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/advicePage.png" 
+                  src="/images/phones/feedback.png" 
                   alt="Screenshot of talk app showing a user listening to a talk."
                   height={500}
                   width={250}
@@ -133,7 +289,7 @@ export default function Home() {
               <div className={`${styles.backsplash_container} col-md-6 col-lg-4 text-center`} >
                 <div className={`${styles.backsplash} mx-auto`}></div>
                 <Image 
-                  src="/images/phones/filterSession2.png" 
+                  src="/images/phones/creation.png" 
                   alt="Screenshot of talk app showing a user creating a session."
                   height={500}
                   width={250}
