@@ -99,25 +99,15 @@ export default function Home() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    fontSize: '18px',
+                    fontSize: '22px',
                     boxShadow: '0 2px 8px rgba(0,0,0,0.2), 0 0 4px rgba(255,255,255,0.5)',
                     transition: 'all 0.2s ease',
                     flexShrink: 0,
-                    marginLeft: '15px'
+                    marginLeft: '15px',
+                    fontWeight: 'bold'
                   }}
                 >
-                  <svg 
-                    width="20" 
-                    height="20" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="#000000" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  >
-                    <path d="M15 18l-6-6 6-6"/>
-                  </svg>
+                  ‹
                 </button>
 
                 {/* Image */}
@@ -147,25 +137,15 @@ export default function Home() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    fontSize: '18px',
+                    fontSize: '22px',
                     boxShadow: '0 2px 8px rgba(0,0,0,0.2), 0 0 4px rgba(255,255,255,0.5)',
                     transition: 'all 0.2s ease',
                     flexShrink: 0,
-                    marginRight: '15px'
+                    marginRight: '15px',
+                    fontWeight: 'bold'
                   }}
                 >
-                  <svg 
-                    width="20" 
-                    height="20" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="#000000" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  >
-                    <path d="M9 18l6-6-6-6"/>
-                  </svg>
+                  ›
                 </button>
               </div>
 
