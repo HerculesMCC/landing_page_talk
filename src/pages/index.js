@@ -64,7 +64,7 @@ export default function Home() {
               <h1 className={`pt-1 px-3 pb-0`}>talk</h1>
               <div className='row justify-content-center px-3'>
                 <h2 className='col-md-10 col-lg-6 col-xl-5'>
-                  think it, talk it
+                  think it, say it
                 </h2>
               </div>
               <div className='row justify-content-center px-3'>
