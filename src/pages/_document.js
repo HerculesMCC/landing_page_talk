@@ -13,14 +13,7 @@ export default function Document() {
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="apple-itunes-app" content="app-id=no" />
-        <meta name="google-play-app" content="app-id=no" />
-        <meta name="mobile-web-app-capable" content="no" />
-
-        <meta name="apple-mobile-web-app-capable" content="no" />
-        {/* Désactiver le comportement PWA et empêcher l'invite d'installation */}
-        <meta name="mobile-web-app-capable" content="no" />
-        <meta name="apple-mobile-web-app-capable" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </Head>
       <body>
         <div id='main-container'>
