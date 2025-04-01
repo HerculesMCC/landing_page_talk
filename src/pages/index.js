@@ -64,7 +64,7 @@ export default function Home() {
               <h1 className={`pt-1 px-3 pb-0`}>talk</h1>
               <div className='row justify-content-center px-3'>
                 <h2 className='col-md-10 col-lg-6 col-xl-5'>
-                  think it, do it
+                  think it, say it
                 </h2>
               </div>
               <div className='row justify-content-center px-3'>
@@ -85,16 +85,17 @@ export default function Home() {
                 margin: '0 5%',
                 width: '90%'
               }}>
-                {/* Bouton gauche */}
-                <button 
+                {/* Flèche gauche */}
+                <div 
                   onClick={() => setCurrentImageIndex((prev) => (prev === 0 ? 4 : prev - 1))}
-                  className="carousel-button"
                   style={{
+                    cursor: 'pointer',
+                    fontSize: '24px',
                     marginLeft: '15px'
                   }}
                 >
                   ❮
-                </button>
+                </div>
 
                 {/* Image */}
                 <Image 
@@ -103,22 +104,23 @@ export default function Home() {
                   height={images[currentImageIndex].height}
                   width={images[currentImageIndex].width}
                   style={{ 
-                    maxWidth: '80%',
+                    maxWidth: '95%',
                     height: 'auto',
                     objectFit: 'contain'
                   }}
                 />
 
-                {/* Bouton droit */}
-                <button 
+                {/* Flèche droite */}
+                <div 
                   onClick={() => setCurrentImageIndex((prev) => (prev === 4 ? 0 : prev + 1))}
-                  className="carousel-button"
                   style={{
+                    cursor: 'pointer',
+                    fontSize: '24px',
                     marginRight: '15px'
                   }}
                 >
                   ❯
-                </button>
+                </div>
               </div>
 
               {/* Version desktop avec les 5 images */}
