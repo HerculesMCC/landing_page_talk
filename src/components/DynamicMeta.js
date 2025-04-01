@@ -24,7 +24,6 @@ const DynamicMeta = () => {
       <meta property="og:description" content={currentMeta.description} />
       <meta property="og:image" content={currentMeta.image} />
 
-      <meta name="apple-itunes-app" content="app-id=6443961864"></meta>
 
       {/*  Twitter */}
       {isRootPath ? (

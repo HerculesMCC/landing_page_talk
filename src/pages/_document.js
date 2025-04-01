@@ -16,6 +16,8 @@ export default function Document() {
         <meta name="apple-itunes-app" content="app-id=no" />
         <meta name="google-play-app" content="app-id=no" />
         <meta name="mobile-web-app-capable" content="no" />
+
+        <meta name="apple-mobile-web-app-capable" content="no" />
         {/* Désactiver le comportement PWA et empêcher l'invite d'installation */}
         <meta name="mobile-web-app-capable" content="no" />
         <meta name="apple-mobile-web-app-capable" content="no" />
