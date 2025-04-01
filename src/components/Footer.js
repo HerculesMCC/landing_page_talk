@@ -15,25 +15,41 @@ class Footer extends Component {
     const current_year = new Date().getFullYear();
     return (
       <footer id="section_footer" className="w-100 d-flex justify-content-center align-items-center">
-        <div className='text-center py-4'>
-        <Link href="/why" className='btn btn-link' target="_blank">
-            Why
-          </Link>
-          <span className="mx-2">|</span>
-          <Link href="mailto:team.talk.app@outlook.com" className='btn btn-link'>
-            Contact
-          </Link>
-
-          <div className='mt-2 mb-3'>
-            <Link href="https://www.instagram.com/talksocialapp.fr/" target="_blank" className='social-icon mx-1'>
-              <IoLogoInstagram size={25}/>
-            </Link>
-            <Link href="https://www.tiktok.com/@talk.fr" target="_blank" className='social-icon mx-1'>
-              <IoLogoTiktok size={25}/>
-            </Link>
+        <div className='w-100 px-4 py-4 d-flex justify-content-between align-items-center'>
+          <div>
+            <small className='text-muted text-center d-block'>FR</small>
+            <div>
+              <Link href="https://www.instagram.com/talksocialapp.fr/" target="_blank" className='social-icon mx-1'>
+                <IoLogoInstagram size={25}/>
+              </Link>
+              <Link href="https://www.tiktok.com/@talk.fr" target="_blank" className='social-icon mx-1'>
+                <IoLogoTiktok size={25}/>
+              </Link>
+            </div>
           </div>
 
-          <p className="mb-0">Copyright © {current_year}, talk.kr. All Rights Reserved.</p>
+          <div className='text-center'>
+            <Link href="/why" className='btn btn-link' target="_blank">
+              why 
+            </Link>
+            <span className="mx-2">|</span>
+            <Link href="mailto:team.talk.app@outlook.com" className='btn btn-link'>
+              contact us
+            </Link>
+            <p className="mb-0">Copyright © {current_year}, talk.kr. All Rights Reserved.</p>
+          </div>
+
+          <div>
+            <small className='text-muted text-center d-block'>EN</small>
+            <div>
+              <Link href="https://www.instagram.com/talk.kr" target="_blank" className='social-icon mx-1'>
+                <IoLogoInstagram size={25}/>
+              </Link>
+              <Link href="https://www.tiktok.com/@talk.kr" target="_blank" className='social-icon mx-1'>
+                <IoLogoTiktok size={25}/>
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     );

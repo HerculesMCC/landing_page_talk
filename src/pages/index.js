@@ -82,8 +82,8 @@ export default function Home() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '20px',
-                margin: '0 40px',
-                width: 'calc(100% - 80px)'
+                margin: '0 5%',
+                width: '90%'
               }}>
                 {/* Bouton gauche */}
                 <button 
@@ -122,7 +122,10 @@ export default function Home() {
               </div>
 
               {/* Version desktop avec les 5 images */}
-              <div className="d-none d-lg-flex justify-content-center align-items-center w-100">
+              <div className="d-none d-lg-flex justify-content-center align-items-center" style={{
+                width: '90%',
+                margin: '0 5%'
+              }}>
                 <Image 
                   src="/images/phones/sport.png" 
                   alt="Screenshot of talk app showing the main player with several comments."
