@@ -28,7 +28,7 @@ class Hero extends Component {
               </div>
               <div className='row justify-content-center px-3'>
                 <p className='col-md-10 col-lg-6 col-xl-5 mt-3'>
-                  Join a conversation, find your voice, connect with pjjeople who care.
+                  Join a conversation, find your voice, connect with people who care.
                 </p>
               </div>
             </div>
