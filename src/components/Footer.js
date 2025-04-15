@@ -22,7 +22,7 @@ class Footer extends Component {
               <Link href="https://www.instagram.com/talksocialapp.fr/" target="_blank" className='social-icon mx-1'>
                 <IoLogoInstagram size={25}/>
               </Link>
-              <Link href="https://www.tiktok.com/@talk.fr" target="_blank" className='social-icon mx-1'>
+              <Link href="https://www.tiktok.com/@talksocialapp.fr" target="_blank" className='social-icon mx-1'>
                 <IoLogoTiktok size={25}/>
               </Link>
             </div>
@@ -42,10 +42,10 @@ class Footer extends Component {
           <div>
             <small className='text-muted text-center d-block'>EN</small>
             <div>
-              <Link href="https://www.instagram.com/talk.kr" target="_blank" className='social-icon mx-1'>
+              <Link href="https://www.instagram.com/talksocialapp" target="_blank" className='social-icon mx-1'>
                 <IoLogoInstagram size={25}/>
               </Link>
-              <Link href="https://www.tiktok.com/@talk.kr" target="_blank" className='social-icon mx-1'>
+              <Link href="https://www.tiktok.com/@talksocialapp" target="_blank" className='social-icon mx-1'>
                 <IoLogoTiktok size={25}/>
               </Link>
             </div>
